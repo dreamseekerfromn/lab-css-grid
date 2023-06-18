@@ -15,21 +15,25 @@ body{
 }
 
 .menu{
+  width: auto;
   grid-column-start: 2;
   grid-column-end: 3;
 }
 
 .primary-content{
   grid-row:2;
-  display: grid;
+  display: flex;
   grid-template-columns: minmax(100px, auto) auto auto auto;
+  
 }
 
 .sidebar{
+  width:20%;
   grid-column: 1;
 }
 
 .main{
+  width: 80%;
   grid-column: 2/5;
 }
 
