@@ -2,7 +2,43 @@
 body{
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: minmax(60px, 80px) auto minmax(40px, 60px);
+}
+
+.header {
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: grid;
+}
+
+.logo{
+  grid-column: 1;
+}
+
+.menu{
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.primary-content{
+  grid-row:2;
+  display: grid;
+  grid-column: 1/4;
+  grid-template-columns: minmax(100px, auto) auto auto auto;
+}
+
+.sidebar{
+  grid-column: 1;
+}
+
+.main{
+  grid-column: 2/5;
+}
+
+.footer {
+  grid-row: 3;
+  grid-column: 1/4;
 }
 /* Do not change the CSS below. */
 
